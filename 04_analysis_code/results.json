@@ -1,0 +1,573 @@
+{
+ "checks": "cells sum to 3000 units and $7653477 warranty",
+ "metrics_by_category": {
+  "Wiring": {
+   "units": 1929,
+   "share_units": 0.643,
+   "dpmo": 643000,
+   "warranty": 1083943,
+   "warranty_share": 0.14162752432652506,
+   "warranty_per_unit": 561.9196474857439,
+   "internal_rework_cost": 974672,
+   "total_cost": 2058614
+  },
+  "Leak": {
+   "units": 788,
+   "share_units": 0.26266666666666666,
+   "dpmo": 262667,
+   "warranty": 5784425,
+   "warranty_share": 0.7557904727485298,
+   "warranty_per_unit": 7340.640862944162,
+   "internal_rework_cost": 398650,
+   "total_cost": 6183076
+  },
+  "Controls": {
+   "units": 283,
+   "share_units": 0.09433333333333334,
+   "dpmo": 94333,
+   "warranty": 785109,
+   "warranty_share": 0.1025820029249451,
+   "warranty_per_unit": 2774.236749116608,
+   "internal_rework_cost": 137998,
+   "total_cost": 923106
+  }
+ },
+ "overall": {
+  "fpy_eolt": 0.0,
+  "dpu": 1.0,
+  "dpmo_3_opps": 333333,
+  "warranty": 7653477,
+  "internal_rework": 1511320,
+  "repair_cost_is_half_of_warranty": 0.4999
+ },
+ "leak": {
+  "supplierB_outside_F2": {
+   "leaks": 356,
+   "units": 646,
+   "rate": 0.5510835913312694
+  },
+  "supplierAC_outside_F2": {
+   "leaks": 0,
+   "units": 1570,
+   "rate": 0.0
+  },
+  "supplierAC_at_F2": {
+   "leaks": 290,
+   "units": 536,
+   "rate": 0.5410447761194029
+  },
+  "supplierB_at_F2": {
+   "leaks": 142,
+   "units": 248,
+   "rate": 0.5725806451612904
+  },
+  "by_cell": {
+   "Facility 1|Supplier A": 0.0,
+   "Facility 1|Supplier B": 0.557,
+   "Facility 1|Supplier C": 0.0,
+   "Facility 2|Supplier A": 0.58,
+   "Facility 2|Supplier B": 0.573,
+   "Facility 2|Supplier C": 0.504,
+   "Facility 3|Supplier A": 0.0,
+   "Facility 3|Supplier B": 0.528,
+   "Facility 3|Supplier C": 0.0,
+   "Facility 4|Supplier A": 0.0,
+   "Facility 4|Supplier B": 0.568,
+   "Facility 4|Supplier C": 0.0
+  },
+  "fisher_B_vs_AC_outsideF2_p": 9.164468120085633e-232,
+  "fisher_F2_vs_other_for_AC_p": 1.413221088503191e-206,
+  "warranty_supplierB_all": 3652490,
+  "warranty_F2_supplierAC": 2131935,
+  "warranty_F2_all": 3197397,
+  "warranty_total": 5784425
+ },
+ "controls": {
+  "revA_rate": 0.31655480984340045,
+  "revBC_rate": 0.0,
+  "fisher_p": 2.2052641634228176e-165,
+  "warranty": 785109,
+  "eolt_label": "Sensor Miswire (all 283)",
+  "repair": "Sensor Rewire (all 283)",
+  "by_facility": {
+   "Facility 1": 70,
+   "Facility 2": 39,
+   "Facility 3": 83,
+   "Facility 4": 91
+  }
+ },
+ "fan": {
+  "night_rate": 0.1542952460383653,
+  "day_rate": 0.0,
+  "fisher_p": 2.0999463227112301e-78,
+  "night_rate_by_fac": {
+   "Facility 1": 0.238,
+   "Facility 2": 0.077,
+   "Facility 3": 0.137,
+   "Facility 4": 0.162
+  },
+  "warranty": 136427,
+  "eolt_fan_errors_all_night": 181,
+  "fan_corrections_all_night": 366
+ },
+ "loose_wiring": {
+  "units": 1744,
+  "warranty": 947516,
+  "rework_labor_h": 5683.0,
+  "material": 459630,
+  "by_fac_rate": {
+   "Facility 1": 0.643,
+   "Facility 2": 0.37,
+   "Facility 3": 0.685,
+   "Facility 4": 0.64
+  },
+  "note": "present at every facility, shift, supplier, family: process-wide fastening issue"
+ },
+ "detection": {
+  "station_vs_mode_chi2": 4.06,
+  "p": 0.9076648486753319,
+  "leak_share_by_station": {
+   "Leak Test": 0.272,
+   "Controls Test": 0.278,
+   "Electrical Test": 0.241,
+   "Functional Test": 0.26
+  },
+  "leaks_caught_outside_leak_test": 0.7385786802030457,
+  "eolt_misdiagnosed_wiring_vs_fan": 170,
+  "misdiag_share_of_wiring": 0.08812856402280975,
+  "wrong_repair_loose_wiring_given_fan_fix": 181
+ },
+ "disposition": {
+  "Rework Completed": {
+   "Wiring": {
+    "n": 939,
+    "wc_per_unit": 556
+   },
+   "Leak": {
+    "n": 397,
+    "wc_per_unit": 7482
+   },
+   "Controls": {
+    "n": 153,
+    "wc_per_unit": 2846
+   }
+  },
+  "Use As Is": {
+   "Wiring": {
+    "n": 990,
+    "wc_per_unit": 567
+   },
+   "Leak": {
+    "n": 391,
+    "wc_per_unit": 7197
+   },
+   "Controls": {
+    "n": 130,
+    "wc_per_unit": 2689
+   }
+  }
+ },
+ "legacyx": {
+  "warranty_per_unit": 3379.9310954063603,
+  "others_per_unit": 2358.4371405094494,
+  "leak_cost_per_unit": 10080.43661971831,
+  "leak_cost_per_unit_others": 6738.394736842105,
+  "leak_share": 0.2508833922261484,
+  "leak_share_others": 0.2654067378800329,
+  "total_warranty": 1913041
+ },
+ "n_portfolios_evaluated": 178,
+ "top_by_3yr_net": [
+  {
+   "ids": [
+    2,
+    3,
+    4,
+    7
+   ],
+   "names": [
+    "Smart Torque Tools",
+    "Wiring Poka-Yoke",
+    "Predictive Quality Dashboard",
+    "Automated Leak Detection"
+   ],
+   "cost": 725000,
+   "y1": 1803664,
+   "y3": 9615504,
+   "run_rate": 3905920,
+   "roi_y1": 1.49,
+   "roi_3y": 12.26,
+   "payback_months": null
+  },
+  {
+   "ids": [
+    1,
+    4,
+    7,
+    9
+   ],
+   "names": [
+    "Braze Process Training",
+    "Predictive Quality Dashboard",
+    "Automated Leak Detection",
+    "Supplier Quality Program"
+   ],
+   "cost": 725000,
+   "y1": 1902015,
+   "y3": 9504207,
+   "run_rate": 3801096,
+   "roi_y1": 1.62,
+   "roi_3y": 12.11,
+   "payback_months": null
+  },
+  {
+   "ids": [
+    2,
+    3,
+    7,
+    9
+   ],
+   "names": [
+    "Smart Torque Tools",
+    "Wiring Poka-Yoke",
+    "Automated Leak Detection",
+    "Supplier Quality Program"
+   ],
+   "cost": 750000,
+   "y1": 1912567,
+   "y3": 9497227,
+   "run_rate": 3792330,
+   "roi_y1": 1.55,
+   "roi_3y": 11.66,
+   "payback_months": null
+  },
+  {
+   "ids": [
+    1,
+    3,
+    4,
+    7
+   ],
+   "names": [
+    "Braze Process Training",
+    "Wiring Poka-Yoke",
+    "Predictive Quality Dashboard",
+    "Automated Leak Detection"
+   ],
+   "cost": 675000,
+   "y1": 1729407,
+   "y3": 9146126,
+   "run_rate": 3708360,
+   "roi_y1": 1.56,
+   "roi_3y": 12.55,
+   "payback_months": null
+  },
+  {
+   "ids": [
+    1,
+    2,
+    4,
+    7
+   ],
+   "names": [
+    "Braze Process Training",
+    "Smart Torque Tools",
+    "Predictive Quality Dashboard",
+    "Automated Leak Detection"
+   ],
+   "cost": 650000,
+   "y1": 1743375,
+   "y3": 9117423,
+   "run_rate": 3687024,
+   "roi_y1": 1.68,
+   "roi_3y": 13.03,
+   "payback_months": null
+  },
+  {
+   "ids": [
+    4,
+    7,
+    9
+   ],
+   "names": [
+    "Predictive Quality Dashboard",
+    "Automated Leak Detection",
+    "Supplier Quality Program"
+   ],
+   "cost": 675000,
+   "y1": 1708277,
+   "y3": 8994877,
+   "run_rate": 3643300,
+   "roi_y1": 1.53,
+   "roi_3y": 12.33,
+   "payback_months": null
+  },
+  {
+   "ids": [
+    1,
+    3,
+    7,
+    9
+   ],
+   "names": [
+    "Braze Process Training",
+    "Wiring Poka-Yoke",
+    "Automated Leak Detection",
+    "Supplier Quality Program"
+   ],
+   "cost": 700000,
+   "y1": 1815015,
+   "y3": 8946613,
+   "run_rate": 3565799,
+   "roi_y1": 1.59,
+   "roi_3y": 11.78,
+   "payback_months": null
+  },
+  {
+   "ids": [
+    1,
+    2,
+    4,
+    6,
+    9
+   ],
+   "names": [
+    "Braze Process Training",
+    "Smart Torque Tools",
+    "Predictive Quality Dashboard",
+    "Vision Inspection System",
+    "Supplier Quality Program"
+   ],
+   "cost": 750000,
+   "y1": 2076957,
+   "y3": 8923712,
+   "run_rate": 3423378,
+   "roi_y1": 1.77,
+   "roi_3y": 10.9,
+   "payback_months": null
+  }
+ ],
+ "top_by_y1_net": [
+  {
+   "ids": [
+    1,
+    2,
+    3,
+    4,
+    9
+   ],
+   "names": [
+    "Braze Process Training",
+    "Smart Torque Tools",
+    "Wiring Poka-Yoke",
+    "Predictive Quality Dashboard",
+    "Supplier Quality Program"
+   ],
+   "cost": 600000,
+   "y1": 1951623,
+   "y3": 7989342,
+   "run_rate": 3018859,
+   "roi_y1": 2.25,
+   "roi_3y": 12.32,
+   "payback_months": null
+  },
+  {
+   "ids": [
+    1,
+    2,
+    4,
+    6,
+    9
+   ],
+   "names": [
+    "Braze Process Training",
+    "Smart Torque Tools",
+    "Predictive Quality Dashboard",
+    "Vision Inspection System",
+    "Supplier Quality Program"
+   ],
+   "cost": 750000,
+   "y1": 2076957,
+   "y3": 8923712,
+   "run_rate": 3423378,
+   "roi_y1": 1.77,
+   "roi_3y": 10.9,
+   "payback_months": null
+  },
+  {
+   "ids": [
+    1,
+    4,
+    6,
+    9
+   ],
+   "names": [
+    "Braze Process Training",
+    "Predictive Quality Dashboard",
+    "Vision Inspection System",
+    "Supplier Quality Program"
+   ],
+   "cost": 650000,
+   "y1": 1850293,
+   "y3": 8196640,
+   "run_rate": 3173174,
+   "roi_y1": 1.85,
+   "roi_3y": 11.61,
+   "payback_months": null
+  },
+  {
+   "ids": [
+    1,
+    2,
+    4,
+    9
+   ],
+   "names": [
+    "Braze Process Training",
+    "Smart Torque Tools",
+    "Predictive Quality Dashboard",
+    "Supplier Quality Program"
+   ],
+   "cost": 475000,
+   "y1": 1671565,
+   "y3": 6896753,
+   "run_rate": 2612594,
+   "roi_y1": 2.52,
+   "roi_3y": 13.52,
+   "payback_months": null
+  },
+  {
+   "ids": [
+    2,
+    3,
+    4,
+    9
+   ],
+   "names": [
+    "Smart Torque Tools",
+    "Wiring Poka-Yoke",
+    "Predictive Quality Dashboard",
+    "Supplier Quality Program"
+   ],
+   "cost": 550000,
+   "y1": 1730281,
+   "y3": 7286783,
+   "run_rate": 2778251,
+   "roi_y1": 2.15,
+   "roi_3y": 12.25,
+   "payback_months": null
+  }
+ ],
+ "single_investments": [
+  {
+   "id": 1,
+   "name": "Braze Process Training",
+   "cost": 50000,
+   "months": 2,
+   "risk": "Low",
+   "run_rate": 329087,
+   "y1": 274239,
+   "y3": 932414,
+   "roi_3y": 17.65
+  },
+  {
+   "id": 2,
+   "name": "Smart Torque Tools",
+   "cost": 100000,
+   "months": 3,
+   "risk": "Low",
+   "run_rate": 406248,
+   "y1": 304686,
+   "y3": 1117182,
+   "roi_3y": 10.17
+  },
+  {
+   "id": 3,
+   "name": "Wiring Poka-Yoke",
+   "cost": 125000,
+   "months": 4,
+   "risk": "Low",
+   "run_rate": 461557,
+   "y1": 307705,
+   "y3": 1230819,
+   "roi_3y": 8.85
+  },
+  {
+   "id": 4,
+   "name": "Predictive Quality Dashboard",
+   "cost": 150000,
+   "months": 6,
+   "risk": "Medium",
+   "run_rate": 1148022,
+   "y1": 574011,
+   "y3": 2870054,
+   "roi_3y": 18.13
+  },
+  {
+   "id": 5,
+   "name": "Enhanced Design Validation",
+   "cost": 200000,
+   "months": 6,
+   "risk": "Medium",
+   "run_rate": 184619,
+   "y1": 92309,
+   "y3": 461546,
+   "roi_3y": 1.31
+  },
+  {
+   "id": 6,
+   "name": "Vision Inspection System",
+   "cost": 275000,
+   "months": 6,
+   "risk": "Medium",
+   "run_rate": 1043634,
+   "y1": 521817,
+   "y3": 2609085,
+   "roi_3y": 8.49
+  },
+  {
+   "id": 7,
+   "name": "Automated Leak Detection",
+   "cost": 350000,
+   "months": 8,
+   "risk": "Low",
+   "run_rate": 2313770,
+   "y1": 771257,
+   "y3": 5398797,
+   "roi_3y": 14.43
+  },
+  {
+   "id": 8,
+   "name": "Additional EOLT Station",
+   "cost": 450000,
+   "months": 8,
+   "risk": "Medium",
+   "run_rate": 1148022,
+   "y1": 382674,
+   "y3": 2678717,
+   "roi_3y": 4.95
+  },
+  {
+   "id": 9,
+   "name": "Supplier Quality Program",
+   "cost": 175000,
+   "months": 4,
+   "risk": "Medium",
+   "run_rate": 976004,
+   "y1": 650669,
+   "y3": 2602677,
+   "roi_3y": 13.87
+  },
+  {
+   "id": 10,
+   "name": "LegacyX Product Refresh",
+   "cost": 500000,
+   "months": 12,
+   "risk": "High",
+   "run_rate": 669564,
+   "y1": 0,
+   "y3": 1339129,
+   "roi_3y": 1.68
+  }
+ ]
+}
